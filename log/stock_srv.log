@@ -1,0 +1,482 @@
+{"level":"INFO","time":"2025-02-14T11:32:06.828+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-14T11:32:06.895+0800","caller":"stock_service/main.go:81","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-14T11:32:06.900+0800","caller":"stock_service/main.go:109","msg":"gRPC-Gateway HTTP Server start","ip":"127.0.0.1","port":8092}
+{"level":"INFO","time":"2025-02-14T11:32:06.900+0800","caller":"stock_service/main.go:115","msg":"Serving gRPC-Gateway on http://0.0.0.0:8092"}
+{"level":"ERROR","time":"2025-02-14T11:36:16.921+0800","caller":"handler/stock.go:35","msg":"GetStock failed","goods_id":1,"error":"query db failed"}
+{"level":"INFO","time":"2025-02-14T14:14:01.533+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-14T14:14:01.716+0800","caller":"stock_service/main.go:81","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-14T14:14:01.723+0800","caller":"stock_service/main.go:109","msg":"gRPC-Gateway HTTP Server start","ip":"127.0.0.1","port":8092}
+{"level":"INFO","time":"2025-02-14T14:14:01.724+0800","caller":"stock_service/main.go:115","msg":"Serving gRPC-Gateway on http://0.0.0.0:8092"}
+{"level":"INFO","time":"2025-02-14T14:15:28.349+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-14T14:15:28.427+0800","caller":"stock_service/main.go:81","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-14T14:15:28.431+0800","caller":"stock_service/main.go:109","msg":"gRPC-Gateway HTTP Server start","ip":"127.0.0.1","port":8092}
+{"level":"INFO","time":"2025-02-14T14:15:28.433+0800","caller":"stock_service/main.go:115","msg":"Serving gRPC-Gateway on http://0.0.0.0:8092"}
+{"level":"INFO","time":"2025-02-14T15:41:24.961+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-14T15:41:25.285+0800","caller":"stock_service/main.go:81","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-14T15:41:25.292+0800","caller":"stock_service/main.go:109","msg":"gRPC-Gateway HTTP Server start","ip":"127.0.0.1","port":8092}
+{"level":"INFO","time":"2025-02-14T15:41:25.293+0800","caller":"stock_service/main.go:115","msg":"Serving gRPC-Gateway on http://0.0.0.0:8092"}
+{"level":"INFO","time":"2025-02-15T14:14:02.565+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-15T14:14:02.943+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-15T14:14:02.988+0800","caller":"stock_service/main.go:115","msg":"gRPC-Gateway HTTP Server start","ip":"127.0.0.1","port":8092}
+{"level":"INFO","time":"2025-02-15T14:14:03.002+0800","caller":"stock_service/main.go:121","msg":"Serving gRPC-Gateway on http://0.0.0.0:8092"}
+{"level":"INFO","time":"2025-02-18T16:10:54.234+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-18T16:10:54.940+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-18T16:10:54.951+0800","caller":"stock_service/main.go:115","msg":"gRPC-Gateway HTTP Server start","ip":"127.0.0.1","port":8092}
+{"level":"INFO","time":"2025-02-18T16:10:54.953+0800","caller":"stock_service/main.go:121","msg":"Serving gRPC-Gateway on http://0.0.0.0:8092"}
+{"level":"ERROR","time":"2025-02-18T16:11:20.781+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:20.805+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:20.820+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:20.898+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:20.911+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:20.924+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:20.935+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:20.945+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:20.952+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:20.964+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:20.972+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:20.989+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:21.003+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:21.023+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:21.044+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:21.061+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:21.087+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:21.104+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:21.206+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-18T16:11:21.344+0800","caller":"mysql/stock.go:108","msg":"reduceStock save failed","goods_id":1001}
+{"level":"INFO","time":"2025-02-19T15:24:06.514+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-19T15:24:06.744+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-19T15:24:06.748+0800","caller":"stock_service/main.go:115","msg":"gRPC-Gateway HTTP Server start","ip":"127.0.0.1","port":8092}
+{"level":"INFO","time":"2025-02-19T15:24:06.748+0800","caller":"stock_service/main.go:121","msg":"Serving gRPC-Gateway on http://0.0.0.0:8092"}
+{"level":"ERROR","time":"2025-02-19T15:24:50.496+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.507+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.520+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.555+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.575+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.579+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.589+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.599+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.618+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.623+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.630+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.637+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.748+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.847+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.858+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.876+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.900+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.911+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:50.998+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:24:51.007+0800","caller":"mysql/stock.go:96","msg":"reduceStock save failed","goods_id":1001}
+{"level":"ERROR","time":"2025-02-19T15:56:30.667+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:30.709+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:30.754+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:30.764+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:30.800+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:30.816+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:30.830+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:30.843+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:30.863+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:30.872+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:30.881+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:30.900+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:30.971+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:30.988+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:30.999+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:31.053+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:31.078+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:31.106+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:31.119+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T15:56:31.245+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:34.826+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:34.834+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:34.848+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:34.900+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:34.917+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:34.929+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:34.952+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:34.967+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:34.984+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:34.995+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:35.018+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:35.027+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:35.038+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:35.046+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:35.076+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:35.179+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:35.231+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:35.290+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:35.470+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:01:35.679+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"INFO","time":"2025-02-19T16:05:25.312+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-19T16:05:25.364+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-19T16:05:25.367+0800","caller":"stock_service/main.go:115","msg":"gRPC-Gateway HTTP Server start","ip":"127.0.0.1","port":8092}
+{"level":"INFO","time":"2025-02-19T16:05:25.368+0800","caller":"stock_service/main.go:121","msg":"Serving gRPC-Gateway on http://0.0.0.0:8092"}
+{"level":"ERROR","time":"2025-02-19T16:05:34.718+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:34.727+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:34.805+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:34.814+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:34.823+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:34.829+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:34.847+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:34.859+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:34.867+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:34.886+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:34.922+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:34.935+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:34.944+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:34.960+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:35.017+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:35.023+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:35.044+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:35.067+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:35.087+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:05:35.299+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:54.732+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:54.794+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:54.820+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:54.828+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:54.835+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:54.865+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:54.876+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:54.886+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:54.903+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:54.925+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:54.939+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:54.951+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:54.959+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:55.002+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:55.086+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:55.105+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:55.118+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:55.150+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:55.213+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:09:55.288+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.306+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.314+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.322+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.381+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.392+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.424+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.442+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.450+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.464+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.481+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.504+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.523+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.534+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.543+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.591+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.627+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.646+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.689+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.717+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:15:08.775+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.374+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.435+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.446+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.455+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.499+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.510+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.535+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.559+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.573+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.591+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.601+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.607+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.622+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.633+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.722+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.765+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.813+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.826+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.839+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"ERROR","time":"2025-02-19T16:17:39.898+0800","caller":"mysql/stock.go:113","msg":"create StockRecord failed","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'create_at' at row 1"}
+{"level":"INFO","time":"2025-02-19T21:31:29.547+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-19T21:31:29.942+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-19T21:31:29.949+0800","caller":"stock_service/main.go:115","msg":"gRPC-Gateway HTTP Server start","ip":"127.0.0.1","port":8092}
+{"level":"INFO","time":"2025-02-19T21:31:29.951+0800","caller":"stock_service/main.go:121","msg":"Serving gRPC-Gateway on http://0.0.0.0:8092"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.176+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.198+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.214+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.231+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.251+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.277+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.308+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.330+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.355+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.419+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.444+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.455+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.498+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.513+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.529+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.562+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.620+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.655+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:32:09.862+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '0-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.145+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.164+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.181+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.207+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.238+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.264+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.285+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.305+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.334+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.357+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.372+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.390+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.438+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.537+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.558+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.581+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.621+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.680+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.714+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:37:30.788+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:44:16.812+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"INFO","time":"2025-02-19T21:46:06.179+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-19T21:46:06.396+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-19T21:46:06.403+0800","caller":"stock_service/main.go:115","msg":"gRPC-Gateway HTTP Server start","ip":"127.0.0.1","port":8092}
+{"level":"INFO","time":"2025-02-19T21:46:06.403+0800","caller":"stock_service/main.go:121","msg":"Serving gRPC-Gateway on http://0.0.0.0:8092"}
+{"level":"ERROR","time":"2025-02-19T21:46:29.938+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1006-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:29.958+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1008-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:29.986+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1016-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.009+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1011-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.042+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1019-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.062+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1018-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.113+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1020-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.131+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1004-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.162+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1002-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.184+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1014-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.213+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1003-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.245+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1017-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.274+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1015-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.291+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1013-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.308+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1005-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.326+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1009-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.437+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.459+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1012-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.494+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1010-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-19T21:46:30.695+0800","caller":"mysql/stock.go:116","msg":"create StockRecord failed","error":"Error 1062 (23000): Duplicate entry '1007-2001' for key 'xx_stock_record.order_id'"}
+{"level":"INFO","time":"2025-02-21T14:28:37.349+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T14:28:37.718+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T15:22:56.831+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T15:22:57.122+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T15:31:55.332+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T15:31:55.381+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T15:41:33.174+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T15:41:33.232+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T17:46:35.054+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T17:46:35.164+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T17:56:17.291+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T17:56:17.495+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T18:00:29.740+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T18:00:29.838+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T18:02:58.946+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T18:02:59.096+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T18:18:46.916+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T18:18:46.976+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T18:19:00.410+0800","caller":"mysql/stock.go:90","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-19T15:51:45+08:00","UpdateAt":"2025-02-19T21:49:31+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":0,"Lock":40}}
+{"level":"ERROR","time":"2025-02-21T18:19:00.411+0800","caller":"mysql/stock.go:94","msg":"库存不足","goods_id":2001,"current_stock":0,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T18:19:00.412+0800","caller":"mysql/stock.go:132","msg":"库存扣减事务失败","goods_id":2001,"error":"understock"}
+{"level":"INFO","time":"2025-02-21T18:19:00.494+0800","caller":"mysql/stock.go:90","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-19T15:51:45+08:00","UpdateAt":"2025-02-19T21:49:31+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":0,"Lock":40}}
+{"level":"ERROR","time":"2025-02-21T18:19:00.495+0800","caller":"mysql/stock.go:94","msg":"库存不足","goods_id":2001,"current_stock":0,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T18:19:00.495+0800","caller":"mysql/stock.go:132","msg":"库存扣减事务失败","goods_id":2001,"error":"understock"}
+{"level":"INFO","time":"2025-02-21T18:19:00.612+0800","caller":"mysql/stock.go:90","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-19T15:51:45+08:00","UpdateAt":"2025-02-19T21:49:31+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":0,"Lock":40}}
+{"level":"ERROR","time":"2025-02-21T18:19:00.613+0800","caller":"mysql/stock.go:94","msg":"库存不足","goods_id":2001,"current_stock":0,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T18:19:00.614+0800","caller":"mysql/stock.go:132","msg":"库存扣减事务失败","goods_id":2001,"error":"understock"}
+{"level":"INFO","time":"2025-02-21T18:19:00.637+0800","caller":"mysql/stock.go:90","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-19T15:51:45+08:00","UpdateAt":"2025-02-19T21:49:31+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":0,"Lock":40}}
+{"level":"ERROR","time":"2025-02-21T18:19:00.638+0800","caller":"mysql/stock.go:94","msg":"库存不足","goods_id":2001,"current_stock":0,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T18:19:00.639+0800","caller":"mysql/stock.go:132","msg":"库存扣减事务失败","goods_id":2001,"error":"understock"}
+{"level":"INFO","time":"2025-02-21T18:19:00.694+0800","caller":"mysql/stock.go:90","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-19T15:51:45+08:00","UpdateAt":"2025-02-19T21:49:31+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":0,"Lock":40}}
+{"level":"ERROR","time":"2025-02-21T18:19:00.695+0800","caller":"mysql/stock.go:94","msg":"库存不足","goods_id":2001,"current_stock":0,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T18:19:00.695+0800","caller":"mysql/stock.go:132","msg":"库存扣减事务失败","goods_id":2001,"error":"understock"}
+{"level":"INFO","time":"2025-02-21T20:51:05.059+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T20:51:05.136+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T21:03:53.935+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T21:03:54.006+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T21:51:56.314+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T21:51:56.788+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T21:53:27.076+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-19T15:51:45+08:00","UpdateAt":"2025-02-19T21:49:31+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":0,"Lock":40}}
+{"level":"INFO","time":"2025-02-21T21:53:27.076+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-19T15:51:45+08:00","UpdateAt":"2025-02-19T21:49:31+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":0,"Lock":40}}
+{"level":"INFO","time":"2025-02-21T21:53:27.076+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-19T15:51:45+08:00","UpdateAt":"2025-02-19T21:49:31+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":0,"Lock":40}}
+{"level":"INFO","time":"2025-02-21T21:53:27.076+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-19T15:51:45+08:00","UpdateAt":"2025-02-19T21:49:31+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":0,"Lock":40}}
+{"level":"INFO","time":"2025-02-21T21:53:27.077+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-19T15:51:45+08:00","UpdateAt":"2025-02-19T21:49:31+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":0,"Lock":40}}
+{"level":"ERROR","time":"2025-02-21T21:53:27.077+0800","caller":"mysql/stock.go:78","msg":"库存不足","goods_id":2001,"available_stock":-40,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T21:53:27.079+0800","caller":"mysql/stock.go:78","msg":"库存不足","goods_id":2001,"available_stock":-40,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T21:53:27.079+0800","caller":"mysql/stock.go:78","msg":"库存不足","goods_id":2001,"available_stock":-40,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T21:53:27.081+0800","caller":"mysql/stock.go:78","msg":"库存不足","goods_id":2001,"available_stock":-40,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T21:53:27.081+0800","caller":"mysql/stock.go:78","msg":"库存不足","goods_id":2001,"available_stock":-40,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T21:53:27.087+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2001,"error":"understock"}
+{"level":"ERROR","time":"2025-02-21T21:53:27.087+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2001,"error":"understock"}
+{"level":"ERROR","time":"2025-02-21T21:53:27.087+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2001,"error":"understock"}
+{"level":"ERROR","time":"2025-02-21T21:53:27.087+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2001,"error":"understock"}
+{"level":"ERROR","time":"2025-02-21T21:53:27.087+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2001,"error":"understock"}
+{"level":"INFO","time":"2025-02-21T21:55:48.441+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T21:55:48.587+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T21:56:05.537+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":2,"CreateAt":"2025-02-19T15:51:45+08:00","UpdateAt":"2025-02-19T15:51:45+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2002,"StockNum":0,"Lock":0}}
+{"level":"ERROR","time":"2025-02-21T21:56:05.538+0800","caller":"mysql/stock.go:78","msg":"库存不足","goods_id":2002,"available_stock":0,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T21:56:05.539+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2002,"error":"understock"}
+{"level":"INFO","time":"2025-02-21T21:56:05.541+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":2,"CreateAt":"2025-02-19T15:51:45+08:00","UpdateAt":"2025-02-19T15:51:45+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2002,"StockNum":0,"Lock":0}}
+{"level":"ERROR","time":"2025-02-21T21:56:05.542+0800","caller":"mysql/stock.go:78","msg":"库存不足","goods_id":2002,"available_stock":0,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T21:56:05.542+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2002,"error":"understock"}
+{"level":"INFO","time":"2025-02-21T21:56:05.545+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":2,"CreateAt":"2025-02-19T15:51:45+08:00","UpdateAt":"2025-02-19T15:51:45+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2002,"StockNum":0,"Lock":0}}
+{"level":"ERROR","time":"2025-02-21T21:56:05.546+0800","caller":"mysql/stock.go:78","msg":"库存不足","goods_id":2002,"available_stock":0,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T21:56:05.547+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2002,"error":"understock"}
+{"level":"INFO","time":"2025-02-21T21:56:05.550+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":2,"CreateAt":"2025-02-19T15:51:45+08:00","UpdateAt":"2025-02-19T15:51:45+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2002,"StockNum":0,"Lock":0}}
+{"level":"ERROR","time":"2025-02-21T21:56:05.550+0800","caller":"mysql/stock.go:78","msg":"库存不足","goods_id":2002,"available_stock":0,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T21:56:05.551+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2002,"error":"understock"}
+{"level":"INFO","time":"2025-02-21T21:56:05.558+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":2,"CreateAt":"2025-02-19T15:51:45+08:00","UpdateAt":"2025-02-19T15:51:45+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2002,"StockNum":0,"Lock":0}}
+{"level":"ERROR","time":"2025-02-21T21:56:05.559+0800","caller":"mysql/stock.go:78","msg":"库存不足","goods_id":2002,"available_stock":0,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T21:56:05.560+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2002,"error":"understock"}
+{"level":"INFO","time":"2025-02-21T22:01:42.072+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T22:01:42.157+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T22:01:55.844+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T22:00:32+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":0,"Lock":0}}
+{"level":"ERROR","time":"2025-02-21T22:01:55.846+0800","caller":"mysql/stock.go:78","msg":"库存不足","goods_id":2001,"available_stock":0,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T22:01:55.848+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2001,"error":"understock"}
+{"level":"INFO","time":"2025-02-21T22:01:55.861+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T22:00:32+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":0,"Lock":0}}
+{"level":"ERROR","time":"2025-02-21T22:01:55.863+0800","caller":"mysql/stock.go:78","msg":"库存不足","goods_id":2001,"available_stock":0,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T22:01:55.865+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2001,"error":"understock"}
+{"level":"INFO","time":"2025-02-21T22:01:55.865+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T22:00:32+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":0,"Lock":0}}
+{"level":"ERROR","time":"2025-02-21T22:01:55.867+0800","caller":"mysql/stock.go:78","msg":"库存不足","goods_id":2001,"available_stock":0,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T22:01:55.869+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2001,"error":"understock"}
+{"level":"INFO","time":"2025-02-21T22:01:55.872+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T22:00:32+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":0,"Lock":0}}
+{"level":"ERROR","time":"2025-02-21T22:01:55.873+0800","caller":"mysql/stock.go:78","msg":"库存不足","goods_id":2001,"available_stock":0,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T22:01:55.875+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2001,"error":"understock"}
+{"level":"INFO","time":"2025-02-21T22:01:55.881+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T22:00:32+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":0,"Lock":0}}
+{"level":"ERROR","time":"2025-02-21T22:01:55.882+0800","caller":"mysql/stock.go:78","msg":"库存不足","goods_id":2001,"available_stock":0,"requested_num":1}
+{"level":"ERROR","time":"2025-02-21T22:01:55.884+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2001,"error":"understock"}
+{"level":"INFO","time":"2025-02-21T22:08:43.642+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T22:08:43.743+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T22:08:56.488+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T22:00:32+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":100,"Lock":0}}
+{"level":"INFO","time":"2025-02-21T22:08:56.497+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T22:00:32+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":100,"Lock":0}}
+{"level":"INFO","time":"2025-02-21T22:08:56.502+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T22:00:32+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":100,"Lock":0}}
+{"level":"INFO","time":"2025-02-21T22:08:56.506+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T22:00:32+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":100,"Lock":0}}
+{"level":"INFO","time":"2025-02-21T22:08:56.510+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T22:00:32+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":100,"Lock":0}}
+{"level":"ERROR","time":"2025-02-21T22:08:56.515+0800","caller":"mysql/stock.go:105","msg":"创建库存记录失败","error":"Error 1062 (23000): Duplicate entry '2002-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-21T22:08:56.519+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2001,"error":"Error 1062 (23000): Duplicate entry '2002-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-21T22:08:56.525+0800","caller":"mysql/stock.go:105","msg":"创建库存记录失败","error":"Error 1062 (23000): Duplicate entry '2003-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-21T22:08:56.527+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2001,"error":"Error 1062 (23000): Duplicate entry '2003-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-21T22:08:56.531+0800","caller":"mysql/stock.go:105","msg":"创建库存记录失败","error":"Error 1062 (23000): Duplicate entry '2005-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-21T22:08:56.534+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2001,"error":"Error 1062 (23000): Duplicate entry '2005-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-21T22:08:56.537+0800","caller":"mysql/stock.go:105","msg":"创建库存记录失败","error":"Error 1062 (23000): Duplicate entry '2004-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-21T22:08:56.540+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2001,"error":"Error 1062 (23000): Duplicate entry '2004-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-21T22:08:56.549+0800","caller":"mysql/stock.go:105","msg":"创建库存记录失败","error":"Error 1062 (23000): Duplicate entry '2001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"ERROR","time":"2025-02-21T22:08:56.551+0800","caller":"mysql/stock.go:112","msg":"库存扣减事务失败","goods_id":2001,"error":"Error 1062 (23000): Duplicate entry '2001-2001' for key 'xx_stock_record.order_id'"}
+{"level":"INFO","time":"2025-02-21T23:17:44.907+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T23:17:45.431+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T23:17:59.750+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T22:00:32+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":100,"Lock":0}}
+{"level":"INFO","time":"2025-02-21T23:17:59.750+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T22:00:32+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":100,"Lock":0}}
+{"level":"INFO","time":"2025-02-21T23:17:59.749+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T22:00:32+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":100,"Lock":0}}
+{"level":"INFO","time":"2025-02-21T23:17:59.750+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T22:00:32+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":100,"Lock":0}}
+{"level":"INFO","time":"2025-02-21T23:17:59.750+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T22:00:32+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":100,"Lock":0}}
+{"level":"INFO","time":"2025-02-21T23:17:59.833+0800","caller":"mysql/stock.go:116","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":99}
+{"level":"INFO","time":"2025-02-21T23:17:59.854+0800","caller":"mysql/stock.go:116","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":99}
+{"level":"INFO","time":"2025-02-21T23:17:59.890+0800","caller":"mysql/stock.go:116","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":99}
+{"level":"INFO","time":"2025-02-21T23:17:59.908+0800","caller":"mysql/stock.go:116","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":99}
+{"level":"INFO","time":"2025-02-21T23:17:59.921+0800","caller":"mysql/stock.go:116","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":99}
+{"level":"INFO","time":"2025-02-21T23:20:07.481+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-21T23:20:07.568+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-21T23:22:26.398+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T23:18:00+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":99,"Lock":1}}
+{"level":"INFO","time":"2025-02-21T23:22:26.398+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T23:18:00+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":99,"Lock":1}}
+{"level":"INFO","time":"2025-02-21T23:22:26.405+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T23:18:00+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":99,"Lock":1}}
+{"level":"INFO","time":"2025-02-21T23:22:26.413+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T23:18:00+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":99,"Lock":1}}
+{"level":"INFO","time":"2025-02-21T23:22:26.414+0800","caller":"mysql/stock.go:116","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":98}
+{"level":"INFO","time":"2025-02-21T23:22:26.414+0800","caller":"mysql/stock.go:73","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T23:22:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":98,"Lock":2}}
+{"level":"INFO","time":"2025-02-21T23:22:26.426+0800","caller":"mysql/stock.go:116","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":98}
+{"level":"INFO","time":"2025-02-21T23:22:26.438+0800","caller":"mysql/stock.go:116","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":98}
+{"level":"INFO","time":"2025-02-21T23:22:26.450+0800","caller":"mysql/stock.go:116","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":98}
+{"level":"INFO","time":"2025-02-21T23:22:26.459+0800","caller":"mysql/stock.go:116","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":97}
+{"level":"INFO","time":"2025-02-22T13:01:31.012+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-22T13:01:31.334+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-22T13:01:39.747+0800","caller":"mysql/stock.go:84","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-21T23:22:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":97,"Lock":3}}
+{"level":"INFO","time":"2025-02-22T13:01:39.782+0800","caller":"mysql/stock.go:127","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":96}
+{"level":"INFO","time":"2025-02-22T13:01:39.795+0800","caller":"mysql/stock.go:84","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":96,"Lock":4}}
+{"level":"INFO","time":"2025-02-22T13:01:39.802+0800","caller":"mysql/stock.go:127","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":95}
+{"level":"INFO","time":"2025-02-22T13:01:39.813+0800","caller":"mysql/stock.go:84","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":95,"Lock":5}}
+{"level":"INFO","time":"2025-02-22T13:01:39.820+0800","caller":"mysql/stock.go:127","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":94}
+{"level":"INFO","time":"2025-02-22T13:01:39.829+0800","caller":"mysql/stock.go:84","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":94,"Lock":6}}
+{"level":"INFO","time":"2025-02-22T13:01:39.834+0800","caller":"mysql/stock.go:127","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":93}
+{"level":"INFO","time":"2025-02-22T13:01:40.065+0800","caller":"mysql/stock.go:84","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":93,"Lock":7}}
+{"level":"INFO","time":"2025-02-22T13:01:40.078+0800","caller":"mysql/stock.go:127","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":92}
+{"level":"INFO","time":"2025-02-22T13:42:16.620+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-22T13:42:16.737+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-22T13:42:59.385+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":92,"Lock":8}}
+{"level":"INFO","time":"2025-02-22T13:42:59.385+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":92,"Lock":8}}
+{"level":"INFO","time":"2025-02-22T13:42:59.385+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":92,"Lock":8}}
+{"level":"INFO","time":"2025-02-22T13:42:59.385+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":92,"Lock":8}}
+{"level":"INFO","time":"2025-02-22T13:42:59.385+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":92,"Lock":8}}
+{"level":"INFO","time":"2025-02-22T13:45:51.409+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-22T13:45:51.488+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-22T13:46:07.870+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":92,"Lock":8}}
+{"level":"INFO","time":"2025-02-22T13:46:07.884+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":92,"Lock":8}}
+{"level":"INFO","time":"2025-02-22T13:46:07.885+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":92,"Lock":8}}
+{"level":"INFO","time":"2025-02-22T13:46:07.889+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":92,"Lock":8}}
+{"level":"INFO","time":"2025-02-22T13:46:07.894+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":92,"Lock":8}}
+{"level":"ERROR","time":"2025-02-22T13:46:07.898+0800","caller":"mysql/stock.go:82","msg":"查询库存失败","goods_id":2001,"error":"context canceled"}
+{"level":"ERROR","time":"2025-02-22T13:46:07.899+0800","caller":"mysql/stock.go:124","msg":"库存扣减事务失败","goods_id":2001,"error":"context canceled"}
+{"level":"ERROR","time":"2025-02-22T13:46:08.021+0800","caller":"mysql/stock.go:82","msg":"查询库存失败","goods_id":2001,"error":"context canceled"}
+{"level":"ERROR","time":"2025-02-22T13:46:08.021+0800","caller":"mysql/stock.go:124","msg":"库存扣减事务失败","goods_id":2001,"error":"context canceled"}
+{"level":"ERROR","time":"2025-02-22T13:46:08.084+0800","caller":"mysql/stock.go:82","msg":"查询库存失败","goods_id":2001,"error":"context canceled"}
+{"level":"ERROR","time":"2025-02-22T13:46:08.084+0800","caller":"mysql/stock.go:124","msg":"库存扣减事务失败","goods_id":2001,"error":"context canceled"}
+{"level":"ERROR","time":"2025-02-22T13:46:08.161+0800","caller":"mysql/stock.go:82","msg":"查询库存失败","goods_id":2001,"error":"context canceled"}
+{"level":"ERROR","time":"2025-02-22T13:46:08.162+0800","caller":"mysql/stock.go:124","msg":"库存扣减事务失败","goods_id":2001,"error":"context canceled"}
+{"level":"ERROR","time":"2025-02-22T13:46:08.256+0800","caller":"mysql/stock.go:82","msg":"查询库存失败","goods_id":2001,"error":"context canceled"}
+{"level":"ERROR","time":"2025-02-22T13:46:08.257+0800","caller":"mysql/stock.go:124","msg":"库存扣减事务失败","goods_id":2001,"error":"context canceled"}
+{"level":"INFO","time":"2025-02-22T13:56:27.269+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-22T13:56:27.325+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-22T13:56:36.042+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":92,"Lock":8}}
+{"level":"INFO","time":"2025-02-22T13:56:36.057+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":92,"Lock":8}}
+{"level":"INFO","time":"2025-02-22T13:56:36.060+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":92,"Lock":8}}
+{"level":"INFO","time":"2025-02-22T13:56:36.066+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":92,"Lock":8}}
+{"level":"INFO","time":"2025-02-22T13:56:36.068+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":92,"Lock":8}}
+{"level":"INFO","time":"2025-02-22T13:56:36.070+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:01:40+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":92,"Lock":8}}
+{"level":"INFO","time":"2025-02-22T13:56:36.118+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":91}
+{"level":"INFO","time":"2025-02-22T13:56:36.151+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:56:36+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":91,"Lock":9}}
+{"level":"INFO","time":"2025-02-22T13:56:36.159+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":90}
+{"level":"INFO","time":"2025-02-22T13:56:36.246+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:56:36+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":90,"Lock":10}}
+{"level":"INFO","time":"2025-02-22T13:56:36.252+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":89}
+{"level":"INFO","time":"2025-02-22T13:56:36.261+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:56:36+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":89,"Lock":11}}
+{"level":"INFO","time":"2025-02-22T13:56:36.269+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":88}
+{"level":"INFO","time":"2025-02-22T13:56:36.274+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:56:36+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":88,"Lock":12}}
+{"level":"INFO","time":"2025-02-22T13:56:36.282+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":87}
+{"level":"INFO","time":"2025-02-22T14:12:24.240+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-22T14:14:12.794+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-22T14:14:12.899+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-22T14:14:26.100+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T13:56:36+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":87,"Lock":13}}
+{"level":"INFO","time":"2025-02-22T14:14:26.119+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":86}
+{"level":"INFO","time":"2025-02-22T14:14:26.124+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:14:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":86,"Lock":14}}
+{"level":"INFO","time":"2025-02-22T14:14:26.130+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:14:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":86,"Lock":14}}
+{"level":"INFO","time":"2025-02-22T14:14:26.137+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:14:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":86,"Lock":14}}
+{"level":"INFO","time":"2025-02-22T14:14:26.145+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:14:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":86,"Lock":14}}
+{"level":"INFO","time":"2025-02-22T14:14:26.151+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:14:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":86,"Lock":14}}
+{"level":"INFO","time":"2025-02-22T14:14:26.161+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:14:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":86,"Lock":14}}
+{"level":"INFO","time":"2025-02-22T14:14:26.173+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":85}
+{"level":"INFO","time":"2025-02-22T14:14:26.188+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:14:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":85,"Lock":15}}
+{"level":"INFO","time":"2025-02-22T14:14:26.196+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":84}
+{"level":"INFO","time":"2025-02-22T14:14:26.344+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:14:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":84,"Lock":16}}
+{"level":"INFO","time":"2025-02-22T14:14:26.354+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":83}
+{"level":"INFO","time":"2025-02-22T14:14:26.366+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:14:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":83,"Lock":17}}
+{"level":"INFO","time":"2025-02-22T14:14:26.376+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":82}
+{"level":"INFO","time":"2025-02-22T14:16:12.601+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-22T14:16:12.707+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8382}
+{"level":"INFO","time":"2025-02-22T14:17:14.134+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:14:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":82,"Lock":18}}
+{"level":"INFO","time":"2025-02-22T14:17:14.137+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:14:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":82,"Lock":18}}
+{"level":"INFO","time":"2025-02-22T14:17:14.147+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:14:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":82,"Lock":18}}
+{"level":"INFO","time":"2025-02-22T14:17:14.153+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:14:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":82,"Lock":18}}
+{"level":"INFO","time":"2025-02-22T14:17:14.158+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:14:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":82,"Lock":18}}
+{"level":"INFO","time":"2025-02-22T14:17:14.164+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:14:26+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":82,"Lock":18}}
+{"level":"INFO","time":"2025-02-22T14:17:14.182+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":81}
+{"level":"INFO","time":"2025-02-22T14:17:14.217+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:17:14+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":81,"Lock":19}}
+{"level":"INFO","time":"2025-02-22T14:17:14.229+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":80}
+{"level":"INFO","time":"2025-02-22T14:17:14.252+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:17:14+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":80,"Lock":20}}
+{"level":"INFO","time":"2025-02-22T14:17:14.266+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":79}
+{"level":"INFO","time":"2025-02-22T14:17:14.354+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:17:14+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":79,"Lock":21}}
+{"level":"INFO","time":"2025-02-22T14:17:14.368+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":78}
+{"level":"INFO","time":"2025-02-22T14:17:14.503+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:17:14+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":78,"Lock":22}}
+{"level":"INFO","time":"2025-02-22T14:17:14.511+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":77}
+{"level":"INFO","time":"2025-02-22T18:24:11.453+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-22T18:24:59.757+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-22T18:27:04.040+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-22T18:27:04.141+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8387}

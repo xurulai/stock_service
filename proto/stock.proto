@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = ".;proto";
+
+// 定义通用响应消息
+message Response {
+    bool success = 1;       // 操作是否成功
+    string message = 2;     // 操作结果描述
+}
+
+service Stock {
+    rpc SetStock(GoodsStockInfo) returns (Response);  // 设置库存
+    rpc GetStock(GetStockReq) returns (GoodsStockInfo);  // 获取库存
+
+    rpc ReduceStock(ReduceStockInfo) returns (Response);  // 扣减库存
+    rpc RollbackStock(ReduceStockInfo) returns (Response);  // 回滚库存
+
+    rpc BatchGetStock(StockInfoList) returns (StockInfoList);  // 批量查询库存
+    rpc BatchReduceStock(StockInfoList) returns (Response);  // 批量扣减库存
+}
+
+message GetStockReq {
+    int64 goods_id = 1;     // 商品ID
+}
+
+message GoodsStockInfo {
+    int64 goods_id = 1;     // 商品ID
+    int64 stock = 2;        // 库存数量
+}
+
+
+message ReduceStockInfo {
+    int64 goods_id = 1;     // 商品ID
+    int64  num = 2;        // 下单商品数量（扣减库存数量）
+    int64 order_id = 3;     // 订单ID（可选字段，仅在扣减库存时使用）
+} 
+message StockInfoList {
+    repeated GoodsStockInfo data = 1;  // 库存信息列表
+}
