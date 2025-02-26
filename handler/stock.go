@@ -2,15 +2,11 @@ package handler
 
 import (
 	"context"
-	"encoding/json"
-
 	"stock_service/biz/stock"
 	"stock_service/dao/mysql"
 	"stock_service/model"
 	"stock_service/proto"
 
-	"github.com/apache/rocketmq-client-go/v2/consumer"
-	"github.com/apache/rocketmq-client-go/v2/primitive"
 	"go.uber.org/zap"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
@@ -85,25 +81,28 @@ func (s *StockSrv) ReduceStock(ctx context.Context, req *proto.ReduceStockInfo) 
 // RollbackMsghandle 监听rocketmq消息进行库存回滚的处理函数
 // 需考虑重复归还的问题（幂等性）  用库存扣减记录表解决
 // 添加库存扣减记录表
-func RollbackMsghandle(ctx context.Context, msgs ...*primitive.MessageExt) (consumer.ConsumeResult, error) {
-	for i := range msgs {
-		var data model.StockRecord
-		// 从消息体中解析 JSON 数据
-		err := json.Unmarshal(msgs[i].Body, &data)
-		if err != nil {
-			// 如果解析失败，记录错误并跳过当前消息
-			zap.L().Error("json.Unmarshal RollbackMsg failed", zap.Error(err))
-			continue
-		}
-		// 将库存回滚
-		err = mysql.RollbackStockByMsg(ctx, data)
-		if err != nil {
-			// 如果库存回滚失败，返回重试结果
-			return consumer.ConsumeRetryLater, nil
-		}
-		// 如果成功处理消息，返回成功结果
-		return consumer.ConsumeSuccess, nil
+func (s *StockSrv) RollbackStock(ctx context.Context, req *proto.RollBackStockInfo) (*proto.Response, error) {
+	// 将 proto.ReduceStockInfo 转换为 model.StockRecord
+	data := model.StockRecord{
+		GoodsId: req.GoodsId,
+		Num: req.RollbackNum,
+		OrderId: req.OrderId,		
 	}
-	// 如果所有消息都处理完毕，返回成功结果
-	return consumer.ConsumeSuccess, nil
+
+	// 调用数据库层的库存回滚方法
+	err := mysql.RollbackStockByMsg(ctx, data)
+	if err != nil {
+		// 如果库存回滚失败，记录错误并返回失败响应
+		zap.L().Error("RollbackStockByMsg failed", zap.Error(err), zap.Int64("goods_id", req.GoodsId), zap.Int64("order_id", req.OrderId))
+		return &proto.Response{
+			Success: false,
+			Message: "库存回滚失败", // 返回错误的具体原因
+		}, nil
+	}
+
+	// 如果成功处理消息，返回成功结果
+	return &proto.Response{
+		Success: true,
+		Message: "库存回滚成功",
+	}, nil
 }

@@ -4,38 +4,54 @@ package proto;
 
 option go_package = ".;proto";
 
-// 定义通用响应消息
+// 响应消息结构
 message Response {
     bool success = 1;       // 操作是否成功
-    string message = 2;     // 操作结果描述
+    string message = 2;     // 操作结果的描述信息
 }
 
+// 库存服务
 service Stock {
-    rpc SetStock(GoodsStockInfo) returns (Response);  // 设置库存
-    rpc GetStock(GetStockReq) returns (GoodsStockInfo);  // 获取库存
-
-    rpc ReduceStock(ReduceStockInfo) returns (Response);  // 扣减库存
-    rpc RollbackStock(ReduceStockInfo) returns (Response);  // 回滚库存
-
-    rpc BatchGetStock(StockInfoList) returns (StockInfoList);  // 批量查询库存
-    rpc BatchReduceStock(StockInfoList) returns (Response);  // 批量扣减库存
+    // 设置库存
+    rpc SetStock(GoodsStockInfo) returns (Response);
+    // 获取库存
+    rpc GetStock(GetStockReq) returns (GoodsStockInfo);
+    // 减少库存
+    rpc ReduceStock(ReduceStockInfo) returns (Response);
+    // 回滚库存
+    rpc RollbackStock(RollBackStockInfo) returns (Response);
+    // 批量获取库存
+    rpc BatchGetStock(StockInfoList) returns (StockInfoList);
+    // 批量减少库存
+    rpc BatchReduceStock(StockInfoList) returns (Response);
 }
 
+// 获取库存请求
 message GetStockReq {
     int64 goods_id = 1;     // 商品ID
 }
 
+// 商品库存信息
 message GoodsStockInfo {
     int64 goods_id = 1;     // 商品ID
-    int64 stock = 2;        // 库存数量
+    int64 stock = 2;        // 当前库存数量
 }
 
-
+// 减少库存请求
 message ReduceStockInfo {
     int64 goods_id = 1;     // 商品ID
-    int64  num = 2;        // 下单商品数量（扣减库存数量）
-    int64 order_id = 3;     // 订单ID（可选字段，仅在扣减库存时使用）
-} 
+    int64 num = 2;          // 减少的数量
+    int64 order_id = 3;     // 订单ID（用于关联订单，便于后续回滚或查询）
+}
+
+// 回滚库存请求
+message RollBackStockInfo {
+    int64 goods_id = 1;     // 商品ID
+    int64 rollback_num = 2;          // 回滚库存的数量
+    int64 order_id = 3;     // 订单ID（用于关联订单，便于后续回滚或查询）
+}
+
+// 批量库存信息
 message StockInfoList {
-    repeated GoodsStockInfo data = 1;  // 库存信息列表
+    repeated GoodsStockInfo data = 1;  // 库存信息列表，用于批量操作
 }

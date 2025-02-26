@@ -2,10 +2,9 @@ package model
 
 type StockRecord struct {
 	BaseModel // 嵌入默认的7个字段
-
 	OrderId int64
 	GoodsId int64
-	Num     int64
+	Num     int64 //回滚数量
 	Status  int32
 }
 

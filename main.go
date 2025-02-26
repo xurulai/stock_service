@@ -53,10 +53,11 @@ func main() {
 		panic(err) // 如果初始化 Redis 失败，直接退出程序
 	}
 
-	// 4. 初始化 Consul 服务注册中心
 	err = registry.Init(config.Conf.ConsulConfig.Addr)
 	if err != nil {
-		panic(err) // 如果初始化 Consul 失败，直接退出程序
+		zap.L().Error("Failed to initialize Consul", zap.Error(err))
+		// 可以选择退出或继续运行，取决于业务需求
+		panic(err)
 	}
 
 	// 监听端口
@@ -81,8 +82,13 @@ func main() {
 	}()
 
 	// 注册服务到 Consul
-	registry.Reg.RegisterService(config.Conf.Name, config.Conf.IP, config.Conf.RpcPort, nil)
+	err = registry.Reg.RegisterService(config.Conf.Name, config.Conf.IP, config.Conf.RpcPort, nil)
+	if err != nil {
+		zap.L().Error("Failed to register service to Consul", zap.Error(err))
+		// 可以选择退出或继续运行，取决于业务需求
+		panic(err)
 
+	}
 	// 打印 gRPC 服务启动日志
 	zap.L().Info(
 		"rpc server start",

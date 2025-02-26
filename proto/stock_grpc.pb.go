@@ -30,12 +30,20 @@ const (
 // StockClient is the client API for Stock service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+//
+// 搴撳瓨鏈嶅姟
 type StockClient interface {
+	// 璁剧疆搴撳瓨
 	SetStock(ctx context.Context, in *GoodsStockInfo, opts ...grpc.CallOption) (*Response, error)
+	// 鑾峰彇搴撳瓨
 	GetStock(ctx context.Context, in *GetStockReq, opts ...grpc.CallOption) (*GoodsStockInfo, error)
+	// 鍑忓皯搴撳瓨
 	ReduceStock(ctx context.Context, in *ReduceStockInfo, opts ...grpc.CallOption) (*Response, error)
-	RollbackStock(ctx context.Context, in *ReduceStockInfo, opts ...grpc.CallOption) (*Response, error)
+	// 鍥炴粴搴撳瓨
+	RollbackStock(ctx context.Context, in *RollBackStockInfo, opts ...grpc.CallOption) (*Response, error)
+	// 鎵归噺鑾峰彇搴撳瓨
 	BatchGetStock(ctx context.Context, in *StockInfoList, opts ...grpc.CallOption) (*StockInfoList, error)
+	// 鎵归噺鍑忓皯搴撳瓨
 	BatchReduceStock(ctx context.Context, in *StockInfoList, opts ...grpc.CallOption) (*Response, error)
 }
 
@@ -77,7 +85,7 @@ func (c *stockClient) ReduceStock(ctx context.Context, in *ReduceStockInfo, opts
 	return out, nil
 }
 
-func (c *stockClient) RollbackStock(ctx context.Context, in *ReduceStockInfo, opts ...grpc.CallOption) (*Response, error) {
+func (c *stockClient) RollbackStock(ctx context.Context, in *RollBackStockInfo, opts ...grpc.CallOption) (*Response, error) {
 	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
 	out := new(Response)
 	err := c.cc.Invoke(ctx, Stock_RollbackStock_FullMethodName, in, out, cOpts...)
@@ -110,12 +118,20 @@ func (c *stockClient) BatchReduceStock(ctx context.Context, in *StockInfoList, o
 // StockServer is the server API for Stock service.
 // All implementations must embed UnimplementedStockServer
 // for forward compatibility.
+//
+// 搴撳瓨鏈嶅姟
 type StockServer interface {
+	// 璁剧疆搴撳瓨
 	SetStock(context.Context, *GoodsStockInfo) (*Response, error)
+	// 鑾峰彇搴撳瓨
 	GetStock(context.Context, *GetStockReq) (*GoodsStockInfo, error)
+	// 鍑忓皯搴撳瓨
 	ReduceStock(context.Context, *ReduceStockInfo) (*Response, error)
-	RollbackStock(context.Context, *ReduceStockInfo) (*Response, error)
+	// 鍥炴粴搴撳瓨
+	RollbackStock(context.Context, *RollBackStockInfo) (*Response, error)
+	// 鎵归噺鑾峰彇搴撳瓨
 	BatchGetStock(context.Context, *StockInfoList) (*StockInfoList, error)
+	// 鎵归噺鍑忓皯搴撳瓨
 	BatchReduceStock(context.Context, *StockInfoList) (*Response, error)
 	mustEmbedUnimplementedStockServer()
 }
@@ -136,7 +152,7 @@ func (UnimplementedStockServer) GetStock(context.Context, *GetStockReq) (*GoodsS
 func (UnimplementedStockServer) ReduceStock(context.Context, *ReduceStockInfo) (*Response, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ReduceStock not implemented")
 }
-func (UnimplementedStockServer) RollbackStock(context.Context, *ReduceStockInfo) (*Response, error) {
+func (UnimplementedStockServer) RollbackStock(context.Context, *RollBackStockInfo) (*Response, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method RollbackStock not implemented")
 }
 func (UnimplementedStockServer) BatchGetStock(context.Context, *StockInfoList) (*StockInfoList, error) {
@@ -221,7 +237,7 @@ func _Stock_ReduceStock_Handler(srv interface{}, ctx context.Context, dec func(i
 }
 
 func _Stock_RollbackStock_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ReduceStockInfo)
+	in := new(RollBackStockInfo)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -233,7 +249,7 @@ func _Stock_RollbackStock_Handler(srv interface{}, ctx context.Context, dec func
 		FullMethod: Stock_RollbackStock_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(StockServer).RollbackStock(ctx, req.(*ReduceStockInfo))
+		return srv.(StockServer).RollbackStock(ctx, req.(*RollBackStockInfo))
 	}
 	return interceptor(ctx, in, info, handler)
 }

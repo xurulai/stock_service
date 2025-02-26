@@ -480,3 +480,55 @@
 {"level":"INFO","time":"2025-02-22T18:24:59.757+0800","caller":"logger/logger.go:42","msg":"init logger success"}
 {"level":"INFO","time":"2025-02-22T18:27:04.040+0800","caller":"logger/logger.go:42","msg":"init logger success"}
 {"level":"INFO","time":"2025-02-22T18:27:04.141+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8387}
+{"level":"INFO","time":"2025-02-24T13:48:31.604+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-24T13:48:31.909+0800","caller":"stock_service/main.go:87","msg":"rpc server start","ip":"127.0.0.1","port":8387}
+{"level":"INFO","time":"2025-02-24T13:50:49.735+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-24T13:50:49.816+0800","caller":"stock_service/main.go:93","msg":"rpc server start","ip":"127.0.0.1","port":8387}
+{"level":"INFO","time":"2025-02-24T14:19:19.937+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-24T14:19:20.020+0800","caller":"stock_service/main.go:93","msg":"rpc server start","ip":"127.0.0.1","port":8387}
+{"level":"INFO","time":"2025-02-24T14:27:56.954+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-24T14:27:57.012+0800","caller":"stock_service/main.go:93","msg":"rpc server start","ip":"127.0.0.1","port":8387}
+{"level":"INFO","time":"2025-02-25T13:09:57.669+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-25T13:09:57.936+0800","caller":"stock_service/main.go:93","msg":"rpc server start","ip":"127.0.0.1","port":8387}
+{"level":"INFO","time":"2025-02-25T15:15:17.368+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-25T15:15:17.428+0800","caller":"stock_service/main.go:93","msg":"rpc server start","ip":"127.0.0.1","port":8387}
+{"level":"INFO","time":"2025-02-25T15:24:03.075+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-25T15:24:16.044+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-25T15:24:16.110+0800","caller":"stock_service/main.go:93","msg":"rpc server start","ip":"127.0.0.1","port":8387}
+{"level":"INFO","time":"2025-02-25T15:24:42.491+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:17:15+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":77,"Lock":23}}
+{"level":"INFO","time":"2025-02-25T15:24:42.492+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:17:15+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":77,"Lock":23}}
+{"level":"INFO","time":"2025-02-25T15:24:42.492+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:17:15+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":77,"Lock":23}}
+{"level":"INFO","time":"2025-02-25T15:24:42.493+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:17:15+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":77,"Lock":23}}
+{"level":"INFO","time":"2025-02-25T15:24:42.493+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:17:15+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":77,"Lock":23}}
+{"level":"ERROR","time":"2025-02-25T15:24:42.494+0800","caller":"mysql/stock.go:82","msg":"查询库存失败","goods_id":1001,"error":"record not found"}
+{"level":"ERROR","time":"2025-02-25T15:24:42.497+0800","caller":"mysql/stock.go:124","msg":"库存扣减事务失败","goods_id":1001,"error":"record not found"}
+{"level":"ERROR","time":"2025-02-25T15:24:42.571+0800","caller":"mysql/stock.go:82","msg":"查询库存失败","goods_id":1001,"error":"record not found"}
+{"level":"ERROR","time":"2025-02-25T15:24:42.572+0800","caller":"mysql/stock.go:124","msg":"库存扣减事务失败","goods_id":1001,"error":"record not found"}
+{"level":"ERROR","time":"2025-02-25T15:24:42.652+0800","caller":"mysql/stock.go:82","msg":"查询库存失败","goods_id":1001,"error":"record not found"}
+{"level":"ERROR","time":"2025-02-25T15:24:42.653+0800","caller":"mysql/stock.go:124","msg":"库存扣减事务失败","goods_id":1001,"error":"record not found"}
+{"level":"ERROR","time":"2025-02-25T15:24:42.679+0800","caller":"mysql/stock.go:82","msg":"查询库存失败","goods_id":1001,"error":"record not found"}
+{"level":"ERROR","time":"2025-02-25T15:24:42.680+0800","caller":"mysql/stock.go:124","msg":"库存扣减事务失败","goods_id":1001,"error":"record not found"}
+{"level":"ERROR","time":"2025-02-25T15:24:42.703+0800","caller":"mysql/stock.go:82","msg":"查询库存失败","goods_id":1001,"error":"record not found"}
+{"level":"ERROR","time":"2025-02-25T15:24:42.704+0800","caller":"mysql/stock.go:124","msg":"库存扣减事务失败","goods_id":1001,"error":"record not found"}
+{"level":"INFO","time":"2025-02-25T15:40:21.316+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-25T15:40:39.866+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-25T15:40:39.966+0800","caller":"stock_service/main.go:93","msg":"rpc server start","ip":"127.0.0.1","port":8387}
+{"level":"INFO","time":"2025-02-25T15:40:48.972+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:17:15+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":77,"Lock":23}}
+{"level":"INFO","time":"2025-02-25T15:40:48.978+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:17:15+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":77,"Lock":23}}
+{"level":"INFO","time":"2025-02-25T15:40:48.980+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:17:15+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":77,"Lock":23}}
+{"level":"INFO","time":"2025-02-25T15:40:48.981+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:17:15+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":77,"Lock":23}}
+{"level":"INFO","time":"2025-02-25T15:40:48.983+0800","caller":"mysql/stock.go:56","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:17:15+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":77,"Lock":23}}
+{"level":"INFO","time":"2025-02-25T15:40:48.985+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-22T14:17:15+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":77,"Lock":23}}
+{"level":"INFO","time":"2025-02-25T15:40:49.072+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":76}
+{"level":"INFO","time":"2025-02-25T15:40:49.108+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-25T15:40:49+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":76,"Lock":24}}
+{"level":"INFO","time":"2025-02-25T15:40:49.115+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":75}
+{"level":"INFO","time":"2025-02-25T15:40:49.125+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-25T15:40:49+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":75,"Lock":25}}
+{"level":"INFO","time":"2025-02-25T15:40:49.134+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":74}
+{"level":"INFO","time":"2025-02-25T15:40:49.278+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-25T15:40:49+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":74,"Lock":26}}
+{"level":"INFO","time":"2025-02-25T15:40:49.296+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":73}
+{"level":"INFO","time":"2025-02-25T15:40:49.407+0800","caller":"mysql/stock.go:85","msg":"查询到的库存数据","data":{"ID":1,"CreateAt":"2025-02-21T22:00:32+08:00","UpdateAt":"2025-02-25T15:40:49+08:00","CreateBy":"admin","UpdateBy":"admin","Version":0,"GoodsId":2001,"StockNum":73,"Lock":27}}
+{"level":"INFO","time":"2025-02-25T15:40:49.416+0800","caller":"mysql/stock.go:128","msg":"库存扣减成功","goods_id":2001,"num":1,"new_stock_num":72}
+{"level":"INFO","time":"2025-02-25T19:28:01.462+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-25T19:28:01.727+0800","caller":"stock_service/main.go:93","msg":"rpc server start","ip":"127.0.0.1","port":8387}
+{"level":"INFO","time":"2025-02-25T19:38:12.258+0800","caller":"logger/logger.go:42","msg":"init logger success"}
+{"level":"INFO","time":"2025-02-25T19:38:12.341+0800","caller":"stock_service/main.go:93","msg":"rpc server start","ip":"127.0.0.1","port":8387}
