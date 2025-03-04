@@ -72,13 +72,13 @@ func TestGetStockByGoodsId(wg *sync.WaitGroup, errCount *int32) {
 func TestRollBackStock(wg *sync.WaitGroup, errCount *int32) {
 	defer wg.Done() // 在函数返回时通知 WaitGroup 当前协程已完成
 	param := &proto.RollBackStockInfo{
-		GoodsId: 2001, // 商品 ID
-		RollbackNum: 10,
-		OrderId: 1001,
+		GoodsId:     2001, // 商品 ID
+		RollbackNum: 1,
+		OrderId:     1001,
 	}
-	start := time.Now()                                       // 记录调用开始时间
+	start := time.Now()                                            // 记录调用开始时间
 	resp, err := client.RollbackStock(context.Background(), param) // 调用 gRPC 服务的查询库存接口
-	duration := time.Since(start)                             // 计算调用耗时
+	duration := time.Since(start)                                  // 计算调用耗时
 
 	if err != nil {
 		atomic.AddInt32(errCount, 1) // 如果发生错误，原子操作增加错误计数
@@ -99,7 +99,7 @@ func main() {
 
 		//go TestGetStockByGoodsId(&wg, &errCount) // 启动协程测试查询库存接口
 		//go TestReduceStock(&wg, i, &errCount)    // 启动协程测试库存扣减接口
-		go TestRollBackStock(&wg,&errCount)
+		go TestRollBackStock(&wg, &errCount)
 	}
 	wg.Wait()                                             // 等待所有协程完成
 	fmt.Printf("总错误数: %d\n", atomic.LoadInt32(&errCount)) // 输出总错误数

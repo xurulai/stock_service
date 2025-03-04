@@ -12,182 +12,224 @@ import (
 	//"gorm.io/gorm/clause"
 )
 
-// dao 灞傜敤鏉ユ墽琛屾暟鎹簱鐩稿叧鐨勬搷浣�
-// SetStock鍒濆鍖栧簱瀛樻垨鑰呮洿鏂板簱瀛�
+// SetStock 设置商品库存，如果库存记录不存在则创建，否则更新库存数量。
 func SetStock(ctx context.Context, goodsId, num int64) error {
-	// 浣跨敤 GORM 鐨� WithContext 鏂规硶纭繚涓婁笅鏂囦紶閫�
+	// 使用 GORM 的 WithContext 方法确保操作在指定的上下文中执行。
 	result := db.WithContext(ctx).
-		Model(&model.Stock{}).          // 鎸囧畾鎿嶄綔鐨勬ā鍨�
-		Where("goods_id = ?", goodsId). // 鎸囧畾鏌ヨ鏉′欢
-		FirstOrCreate(&model.Stock{
+		Model(&model.Stock{}).          // 指定操作的模型为 Stock 表。
+		Where("goods_id = ?", goodsId). // 根据商品 ID 查询库存记录。
+		FirstOrCreate(&model.Stock{     // 如果记录不存在则创建，否则获取第一条记录。
 			GoodsId:  goodsId,
 			StockNum: num,
 		})
-		// 妫€鏌ユ槸鍚︽湁閿欒
+
+	// 如果查询或创建失败，返回错误。
 	if result.Error != nil {
 		return errno.ErrQueryFailed
-
 	}
-	// 濡傛灉璁板綍宸插瓨鍦紝鍒欐洿鏂板簱瀛樻暟閲�
+
+	// 如果没有影响任何行（即记录已存在且未更新），则手动更新库存数量。
 	if result.RowsAffected == 0 {
 		return db.WithContext(ctx).
 			Model(&model.Stock{}).
 			Where("goods_id = ?", goodsId).
-			Update("Num", num).Error
+			Update("StockNum", num).Error // 更新库存数量。
 	}
 
-	return nil
+	return nil // 操作成功，返回 nil。
 }
 
-// GetStockByGoodsId 鏍规嵁goodsId鏌ヨ搴撳瓨鏁版嵁
+// GetStockByGoodsId 根据商品 ID 查询库存信息。
 func GetStockByGoodsId(ctx context.Context, goodsId int64) (*model.Stock, error) {
-	// 閫氳繃gorm鍘绘暟鎹簱涓幏鍙栨暟鎹�
+	// 初始化一个 Stock 结构体用于存储查询结果。
 	var data model.Stock
+
+	// 使用 GORM 查询库存记录。
 	err := db.WithContext(ctx).
-		Model(&model.Stock{}).          // 鎸囧畾琛ㄥ悕
-		Where("goods_id = ?", goodsId). // 鏌ヨ鏉′欢
-		First(&data).                   // 灏嗘煡璇㈠嚭鏉ョ殑鏁版嵁濉厖鍒扮粨鏋勪綋鍙橀噺涓�
-		Error
-	fmt.Printf("data:%v\n", data)
-	// 濡傛灉鏌ヨ鍑洪敊涓斾笉鏄┖鏁版嵁鐨勯敊
+		Model(&model.Stock{}).          // 指定操作的模型为 Stock 表。
+		Where("goods_id = ?", goodsId). // 根据商品 ID 查询。
+		First(&data).                   // 获取第一条记录。
+		Error                           // 获取查询结果的错误信息。
+
+	// 如果查询失败且错误不是记录未找到，则返回 ErrQueryFailed。
 	if err != nil && err != gorm.ErrRecordNotFound {
 		return nil, errno.ErrQueryFailed
 	}
-	zap.L().Info("鏌ヨ鍒扮殑搴撳瓨鏁版嵁", zap.Any("data", data))
-	return &data, nil
+
+	// 记录查询结果的日志。
+	zap.L().Info("查询到的库存信息", zap.Any("data", data))
+
+	return &data, nil // 返回查询结果。
 }
 
-// 鍏堝垽鏂簱瀛樺啀涓嬪崟
-// 涓嬪崟鍚庡啀鎵ｅ噺搴撳瓨
-// ReduceStock 鎵ｅ噺搴撳瓨 鍩轰簬redis鍒嗗竷寮忛攣鐗堟湰
+// ReduceStock 减少库存，支持事务和分布式锁，确保操作的原子性。
 func ReduceStock(ctx context.Context, goodsId, num, orderId int64) (*model.Stock, error) {
 	var data model.Stock
-	// 鍒涘缓key
+
+	// 构造分布式锁的 key。
 	mutexname := fmt.Sprintf("xx-stock-%d", goodsId)
-	// 鍒涘缓閿�
+
+	// 创建 Redis 分布式锁。
 	mutex := redis.Rs.NewMutex(mutexname)
-	// 鑾峰彇閿�
+
+	// 尝试获取锁。
 	if err := mutex.Lock(); err != nil {
 		return nil, errno.ErrReducestockFailed
 	}
-	// 姝ゆ椂data鍙兘閮芥槸鏃ф暟鎹� data.num = 99  瀹為檯涓婃暟鎹簱涓璶um=97
-	defer mutex.Unlock() // 閲婃斁閿�
+	defer mutex.Unlock() // 确保在函数结束时释放锁。
+
+	// 使用 GORM 事务执行库存减少操作。
 	err := db.Transaction(func(tx *gorm.DB) error {
-		// 鏌ヨ搴撳瓨
+		// 查询当前库存。
 		err := tx.WithContext(ctx).
 			Model(&model.Stock{}).
 			Where("goods_id = ?", goodsId).
 			First(&data).Error
 		if err != nil {
-			zap.L().Error("鏌ヨ搴撳瓨澶辫触", zap.Int64("goods_id", goodsId), zap.Error(err))
+			zap.L().Error("查询库存失败", zap.Int64("goods_id", goodsId), zap.Error(err))
 			return err
 		}
-		zap.L().Info("鏌ヨ鍒扮殑搴撳瓨鏁版嵁", zap.Any("data", data))
+		zap.L().Info("查询到的库存信息", zap.Any("data", data))
 
-		// 妫€鏌ュ簱瀛樻槸鍚﹁冻澶�
+		// 计算可用库存（当前库存 - 锁定库存）。
 		availableStock := data.StockNum - data.Lock
+
+		// 检查是否有足够的库存。
 		if availableStock < num {
-			zap.L().Error("搴撳瓨涓嶈冻", zap.Int64("goods_id", goodsId), zap.Int64("available_stock", availableStock), zap.Int64("requested_num", num))
+			zap.L().Error("库存不足", zap.Int64("goods_id", goodsId), zap.Int64("available_stock", availableStock), zap.Int64("requested_num", num))
 			return errno.ErrUnderstock
 		}
 
-		// 鎵ｅ噺搴撳瓨
+		// 减少库存并增加锁定库存。
 		data.StockNum -= num
 		data.Lock += num
 
-		// 鏇存柊搴撳瓨
+		// 更新库存记录。
 		err = tx.WithContext(ctx).
 			Save(&data).Error
 		if err != nil {
-			zap.L().Error("鏇存柊搴撳瓨澶辫触", zap.Int64("goods_id", goodsId), zap.Error(err))
+			zap.L().Error("更新库存失败", zap.Int64("goods_id", goodsId), zap.Error(err))
 			return err
 		}
 
-		// 鍒涘缓搴撳瓨璁板綍
+		// 创建库存记录。
 		stockRecord := model.StockRecord{
 			OrderId: orderId,
 			GoodsId: goodsId,
 			Num:     num,
-			Status:  1, // 棰勬墸鍑�
+			Status:  1, // 状态为 1 表示已减少。
 		}
 		err = tx.WithContext(ctx).
 			Model(&model.StockRecord{}).
 			Create(&stockRecord).Error
 		if err != nil {
-			zap.L().Error("鍒涘缓搴撳瓨璁板綍澶辫触", zap.Error(err))
+			zap.L().Error("创建库存记录失败", zap.Error(err))
 			return err
 		}
 		return nil
 	})
 
+	// 如果事务失败，返回错误。
 	if err != nil {
-		zap.L().Error("搴撳瓨鎵ｅ噺浜嬪姟澶辫触", zap.Int64("goods_id", goodsId), zap.Error(err))
+		zap.L().Error("减少库存失败", zap.Int64("goods_id", goodsId), zap.Error(err))
 		return nil, err
 	}
 
-	zap.L().Info("搴撳瓨鎵ｅ噺鎴愬姛",
+	// 记录减少库存成功的日志。
+	zap.L().Info("减少库存成功",
 		zap.Int64("goods_id", goodsId),
 		zap.Int64("num", num),
 		zap.Int64("new_stock_num", data.StockNum),
 	)
 	return &data, nil
-}
-
-// RollbackStockByMsg 鐩戝惉 RocketMQ 娑堟伅杩涜搴撳瓨鍥炴粴
+} // RollbackStockByMsg 根据 RocketMQ 消息回滚库存，支持事务操作。
 func RollbackStockByMsg(ctx context.Context, data model.StockRecord) error {
-	// 鍏堟煡璇㈠簱瀛樻暟鎹紝闇€瑕佹斁鍒颁簨鍔℃搷浣滀腑
-	db.Transaction(func(tx *gorm.DB) error {
+	// 构造分布式锁的 key。
+	mutexName := fmt.Sprintf("xx-stock-%d", data.OrderId)
+
+	// 创建 Redis 分布式锁。
+	mutex := redis.Rs.NewMutex(mutexName)
+
+	// 尝试获取锁。
+	if err := mutex.Lock(); err != nil {
+		zap.L().Error("获取分布式锁失败",
+			zap.String("mutexName", mutexName),
+			zap.Error(err))
+		return errno.ErrRollbackstockFailed
+	}
+	// 确保在函数结束时释放锁。
+	defer mutex.Unlock() // 确保在函数结束时释放锁。
+
+	// 使用 GORM 事务执行库存回滚操作。
+	return db.Transaction(func(tx *gorm.DB) error {
 		var stockRecord model.StockRecord
-		// 鏌ヨ搴撳瓨鎵ｅ噺璁板綍琛�
+
+		// 查询库存记录。
 		err := tx.WithContext(ctx).
 			Model(&model.StockRecord{}).
 			Where("order_id = ? and goods_id = ? and status = 1", data.OrderId, data.GoodsId).
 			First(&stockRecord).Error
-		// 娌℃壘鍒拌褰�
-		// 鍘嬫牴灏辨病璁板綍鎴栬€呭凡缁忓洖婊氳繃 涓嶉渶瑕佸悗缁搷浣�
+
+		// 如果记录不存在，则直接返回，不做处理。
 		if err == gorm.ErrRecordNotFound {
+			zap.L().Warn("库存记录不存在，无需回滚",
+				zap.Int64("orderId", data.OrderId),
+				zap.Int64("goodsId", data.GoodsId))
 			return nil
 		}
+
+		// 如果查询失败，记录错误并返回。
 		if err != nil {
-			zap.L().Error("query stock_record by order_id failed", zap.Error(err), zap.Int64("order_id", data.OrderId), zap.Int64("goods_id", data.GoodsId))
+			zap.L().Error("根据订单 ID 查询库存记录失败",
+				zap.Error(err),
+				zap.Int64("orderId", data.OrderId),
+				zap.Int64("goodsId", data.GoodsId))
 			return err
 		}
 
-		// 寮€濮嬪綊杩樺簱瀛�
+		// 查询库存信息。
 		var stock model.Stock
-		// 鏌ヨ搴撳瓨琛�
 		err = tx.WithContext(ctx).
 			Model(&model.Stock{}).
 			Where("goods_id = ?", data.GoodsId).
 			First(&stock).Error
 		if err != nil {
-			zap.L().Error("query stock by goods_id failed", zap.Error(err), zap.Int64("goods_id", data.GoodsId))
+			zap.L().Error("查询库存失败",
+				zap.Error(err),
+				zap.Int64("goodsId", data.GoodsId))
 			return err
 		}
 
-		// 鏇存柊搴撳瓨鏁伴噺
-		stock.StockNum += data.Num // 搴撳瓨鍔犱笂
-		stock.Lock -= data.Num     // 閿佸畾鐨勫簱瀛樺噺鎺�
-		if stock.Lock < 0 {        // 棰勬墸搴撳瓨涓嶈兘涓鸿礋
+		// 回滚库存。
+		stock.StockNum += data.Num // 增加库存数量。
+		stock.Lock -= data.Num     // 减少锁定库存。
+		if stock.Lock < 0 {        // 如果锁定库存小于 0，表示回滚失败。
+			zap.L().Error("回滚库存失败，锁定库存不足",
+				zap.Int64("goodsId", data.GoodsId),
+				zap.Int64("stockNum", stock.StockNum),
+				zap.Int64("lock", stock.Lock))
 			return errno.ErrRollbackstockFailed
 		}
 
-		// 淇濆瓨搴撳瓨鏇存柊
+		// 更新库存记录。
 		err = tx.WithContext(ctx).Save(&stock).Error
 		if err != nil {
-			zap.L().Warn("RollbackStock stock save failed", zap.Int64("goods_id", stock.GoodsId), zap.Error(err))
+			zap.L().Warn("回滚库存失败",
+				zap.Int64("goodsId", stock.GoodsId),
+				zap.Error(err))
 			return err
 		}
 
-		// 灏嗗簱瀛樻墸鍑忚褰曠殑鐘舵€佸彉鏇翠负宸插洖婊�
+		// 更新库存记录状态为 3（表示已回滚）。
 		stockRecord.Status = 3
 		err = tx.WithContext(ctx).Save(&stockRecord).Error
 		if err != nil {
-			zap.L().Warn("RollbackStock stock_record save failed", zap.Int64("goods_id", stock.GoodsId), zap.Error(err))
+			zap.L().Warn("更新库存记录状态失败",
+				zap.Int64("goodsId", stock.GoodsId),
+				zap.Error(err))
 			return err
 		}
 
 		return nil
 	})
-	return nil
 }
